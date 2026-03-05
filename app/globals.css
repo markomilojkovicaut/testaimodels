@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue: #2981e2;
+  --blue-hover: #1a6fd4;
+  --blue-glow: rgba(41, 129, 226, 0.15);
+  --gray: #9CA3AF;
+  --white: #ffffff;
+  --bg-darkest: #0b0f14;
+  --bg-dark: #0e171e;
+  --bg-mid: #12161a;
+  --bg-card: #111820;
+  --border: rgba(41, 129, 226, 0.12);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+}
+
+* { box-sizing: border-box; padding: 0; margin: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg-darkest);
+  color: var(--white);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Commissioner', sans-serif; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-darkest); }
+::-webkit-scrollbar-thumb { background: rgba(41,129,226,0.3); border-radius: 3px; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pulseGlow { 0%,100% { opacity:0.4; } 50% { opacity:0.8; } }
+@keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+@keyframes shimmer { 0% { background-position:-200% center; } 100% { background-position:200% center; } }
+@keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.animate-fade-up { animation: fadeInUp 0.7s ease forwards; }
+.animate-fade-in { animation: fadeIn 0.7s ease forwards; }
+.animate-pulse-glow { animation: pulseGlow 3s ease-in-out infinite; }
+.animate-float { animation: float 4s ease-in-out infinite; }
+.animate-spin-slow { animation: spin-slow 20s linear infinite; }
+
+.delay-100 { animation-delay: 0.1s; opacity:0; }
+.delay-200 { animation-delay: 0.2s; opacity:0; }
+.delay-300 { animation-delay: 0.3s; opacity:0; }
+.delay-400 { animation-delay: 0.4s; opacity:0; }
+.delay-500 { animation-delay: 0.5s; opacity:0; }
+.delay-600 { animation-delay: 0.6s; opacity:0; }
+.delay-700 { animation-delay: 0.7s; opacity:0; }
+.delay-800 { animation-delay: 0.8s; opacity:0; }
