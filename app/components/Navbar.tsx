@@ -6,6 +6,7 @@ import { Container } from "./ui";
 const NAV_LINKS = [
   { label: "How it Works", href: "#how-it-works" },
   { label: "Models", href: "#models" },
+  { label: "GTM Engine", href: "/gtm" },
   { label: "Pricing", href: "#pricing" },
   { label: "Blog", href: "/blog" },
 ];
