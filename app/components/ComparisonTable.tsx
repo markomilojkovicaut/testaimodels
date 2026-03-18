@@ -8,7 +8,7 @@ const ROWS = [
   { feature: "See real costs",           tam: [true,"With projections"], red: [false,""],         arena: [false,""],                 heli: ["partial","After spending"]    },
   { feature: "Pre-deployment",           tam: [true,"Test before commit"],red:[false,"Guess"],    arena: ["partial","Research only"],heli: [false,"Monitor after"]         },
   { feature: "No API keys needed",       tam: [true,""],                 red: [true,""],          arena: [true,""],                  heli: [false,"Requires setup"]        },
-  { feature: "Time to results",          tam: ["30 seconds",true],       red: ["Hours reading",true],arena:["Varies",true],          heli: ["After deploy",true]           },
+  { feature: "Time to results",          tam: ["30 seconds",""],         red: ["Hours reading",""],   arena:["Varies",""],            heli: ["After deploy",""]             },
   { feature: "Scale cost projections",   tam: [true,"10K-1M queries"],   red: [false,""],         arena: [false,""],                 heli: ["partial","Usage only"]        },
 ];
 

@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Commissioner', sans-serif; }
 @keyframes shimmer { 0% { background-position:-200% center; } 100% { background-position:200% center; } }
 @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-.animate-fade-up { animation: fadeInUp 0.7s ease forwards; }
+.animate-fade-up { animation: fadeInUp 0.7s ease forwards; opacity: 0; }
 .animate-fade-in { animation: fadeIn 0.7s ease forwards; }
 .animate-pulse-glow { animation: pulseGlow 3s ease-in-out infinite; }
 .animate-float { animation: float 4s ease-in-out infinite; }
